@@ -16,13 +16,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Reserva de equipamentos", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+                <!-- Página inicial -->
+                @Html.ActionLink("Reserva de equipamentos", "Index", "ReservaEquipamentos", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                    <!-- ("TITULO NO MENU", "METODO DA CONTROLE (INDEX), NO CASO", "CONTROLLER NAME") -->
+                    <li>@Html.ActionLink("| Usuários |", "Index", "CadastroUsuarios")</li>
+                    <li>@Html.ActionLink("| Equipamentos |", "Index", "CadastroEquipamentos")</li>
                 </ul>
             </div>
         </div>

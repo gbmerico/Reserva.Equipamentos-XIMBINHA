@@ -9,6 +9,8 @@ namespace Reserva.Equipamentos_XIMBINHA.Controllers
     public class CadastroEquipamentosController : Controller
     {
         // GET: CadastroEquipamentos
+
+        // METODO
         public ActionResult Index()
         {
             return View();

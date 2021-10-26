@@ -6,9 +6,11 @@ using System.Web.Mvc;
 
 namespace Reserva.Equipamentos_XIMBINHA.Controllers
 {
-    public class CadastroUsuarioController : Controller
+    public class CadastroUsuariosController : Controller
     {
         // GET: CadastroUsuario
+
+        // METODO
         public ActionResult Index()
         {
             return View();
