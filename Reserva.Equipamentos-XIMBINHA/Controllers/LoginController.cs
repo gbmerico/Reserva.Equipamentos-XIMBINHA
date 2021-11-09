@@ -3,21 +3,22 @@ using System.Web.Mvc;
 
 namespace Reserva.Equipamentos_XIMBINHA.Controllers
 {
-    public class CadastroEquipamentosController : Controller
+    public class LoginController : Controller
     {
-        // GET: CadastroEquipamentos
+        // GET: Login
 
-        // METODO
+        // metodo
         public ActionResult Index()
         {
+
             return View();
         }
 
         [HttpPost]
-        public ActionResult Cadastro(CadastroEquipamentoModel model)
+        public ActionResult Login( LoginModel model )
         {
 
-            return View("Index");
+            return Redirect("/ReservaEquipamentos");
         }
     }
 }

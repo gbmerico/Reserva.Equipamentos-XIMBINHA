@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Reserva.Equipamentos_XIMBINHA.Models;
 using System.Web.Mvc;
 
 namespace Reserva.Equipamentos_XIMBINHA.Controllers
