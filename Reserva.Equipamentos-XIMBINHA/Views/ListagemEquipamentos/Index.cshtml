@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Reserva.Equipamentos_XIMBINHA.Models.CadastroEquipamentoModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>lista de equipamentos</h2>
+
+<p>
+    @Html.ActionLink("NOVO EQUIPAMENTO", "Novo")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.ActionLink("| Alterar |", "Edit", new { id=item.Id })
+            @Html.ActionLink("| Deletar |", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
